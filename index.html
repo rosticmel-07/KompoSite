@@ -1,0 +1,1627 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>COMPOSITE — Композитна арматура</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-D9J1QOKd.css">
+  </head>
+
+  <body>
+    <header class="site-header" id="js-header">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Головна навігація">
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="Composite — на головну">
+        <div class="logo__main">
+          <div class="logo__icon" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <span class="logo__name">COMPOSITE</span>
+        </div>
+        <span class="logo__sub">Композитна сітка</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav__links" role="list">
+        <li><a href="#advantages">Переваги</a></li>
+        <li><a href="#usecases">Застосування</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#reviews">Відгуки</a></li>
+        <li><a href="#about">Опис сітки</a></li>
+        <li><a href="#contact">Замовити</a></li>
+      </ul>
+
+      <!-- Phone -->
+      <a href="tel:+38067891201" class="nav__phone" aria-label="Зателефонувати">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07
+                   9.81 19.79 19.79 0 011.18 2H4a2 2 0 012 1.72
+                   c.13 1 .37 1.98.71 2.91a2 2 0 01-.45 2.11L5.09
+                   9.91a16 16 0 006.99 6.99l1.17-1.17a2 2 0
+                   012.11-.45c.93.34 1.91.58 2.91.71A2 2 0 0122 16.92z"
+          />
+        </svg>
+        +38 (067) 891 20 1
+      </a>
+
+      <!-- CTA button -->
+      <a href="#contact" class="btn btn--primary nav__cta">
+        Замовити дзвінок
+      </a>
+
+      <!-- Hamburger -->
+      <button
+        class="hamburger"
+        id="js-hamburger"
+        aria-label="Відкрити меню"
+        aria-expanded="false"
+        aria-controls="js-mobile-nav"
+      >
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile nav overlay -->
+<nav
+  class="mobile-nav"
+  id="js-mobile-nav"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Мобільне меню"
+>
+  <button
+    class="mobile-nav__close"
+    id="js-mobile-nav-close"
+    aria-label="Закрити меню"
+  >
+    &times;
+  </button>
+
+  <a href="#advantages" class="mobile-nav__link js-mobile-link">Переваги</a>
+  <a href="#usecases" class="mobile-nav__link js-mobile-link">Застосування</a>
+  <a href="#gallery" class="mobile-nav__link js-mobile-link">Галерея</a>
+  <a href="#reviews" class="mobile-nav__link js-mobile-link">Відгуки</a>
+  <a href="#about" class="mobile-nav__link js-mobile-link">Опис сітки</a>
+  <a href="#contact" class="mobile-nav__link js-mobile-link">Замовити</a>
+  <a href="tel:+380678791201" class="mobile-nav__phone">+380678791201</a>
+</nav>
+
+    <main>
+      <section class="hero" id="home" aria-label="Головний банер">
+  <div class="container">
+    <div class="hero__inner">
+      <!-- Text content -->
+      <div class="hero__content">
+        <div class="hero__badge" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173
+                     6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792
+                     c.197-.39.73-.39.927 0l2.184 4.327 4.898.696
+                     c.441.062.612.636.282.95l-3.522 3.356.83 4.73
+                     c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+            />
+          </svg>
+          Виробник композитної арматури
+        </div>
+
+        <h1 class="hero__title">
+          Композитна сітка<br />
+          <em>для міцних рішень</em>
+        </h1>
+
+        <p class="hero__desc">
+          Високоякісна композитна сітка для будівництва, огороджень, армування
+          та інших потреб.
+        </p>
+
+        <!-- Feature pills -->
+        <div class="hero__features" role="list" aria-label="Ключові переваги">
+          <div class="hero__feature" role="listitem">
+            <span class="hero__feature-dot" aria-hidden="true">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </span>
+            Міцність та надійність
+          </div>
+          <div class="hero__feature" role="listitem">
+            <span class="hero__feature-dot" aria-hidden="true">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </span>
+            Стійкість до корозії та хімії
+          </div>
+          <div class="hero__feature" role="listitem">
+            <span class="hero__feature-dot" aria-hidden="true">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </span>
+            Довговічність до 50 років
+          </div>
+        </div>
+
+        <!-- CTA buttons -->
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Замовити зараз</a>
+          <a href="#about" class="btn btn--outline">
+            Дізнатись більше
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- /hero__content -->
+
+      <!-- Visual — composite mesh roll (inline SVG) -->
+      <div class="hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="roll-body" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2e2e2e" />
+              <stop offset="100%" stop-color="#0f0f0f" />
+            </linearGradient>
+            <linearGradient id="roll-cap" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#3d3d3d" />
+              <stop offset="100%" stop-color="#1f1f1f" />
+            </linearGradient>
+            <pattern
+              id="mesh-pat"
+              x="0"
+              y="0"
+              width="20"
+              height="20"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect width="20" height="20" fill="#1e1e1e" />
+              <line
+                x1="0"
+                y1="0"
+                x2="20"
+                y2="0"
+                stroke="#3a3a3a"
+                stroke-width="2"
+              />
+              <line
+                x1="0"
+                y1="10"
+                x2="20"
+                y2="10"
+                stroke="#2e2e2e"
+                stroke-width="1"
+              />
+              <line
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="20"
+                stroke="#3a3a3a"
+                stroke-width="2"
+              />
+              <line
+                x1="10"
+                y1="0"
+                x2="10"
+                y2="20"
+                stroke="#2e2e2e"
+                stroke-width="1"
+              />
+            </pattern>
+            <clipPath id="roll-clip">
+              <ellipse cx="390" cy="195" rx="52" ry="125" />
+            </clipPath>
+            <radialGradient id="roll-shine" cx="35%" cy="35%">
+              <stop offset="0%" stop-color="rgba(255,255,255,.08)" />
+              <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+            </radialGradient>
+          </defs>
+
+          <!-- Flat mesh sheet -->
+          <g transform="translate(10,205) skewX(-6) skewY(-1)">
+            <rect width="310" height="168" rx="4" fill="url(#mesh-pat)" />
+            <rect width="310" height="2.5" fill="#484848" />
+            <rect y="165.5" width="310" height="2.5" fill="#252525" />
+          </g>
+
+          <!-- Roll body -->
+          <ellipse cx="390" cy="195" rx="52" ry="125" fill="url(#roll-body)" />
+
+          <!-- Grid lines on roll (clipped) -->
+          <g clip-path="url(#roll-clip)" opacity=".55">
+            <line
+              x1="360"
+              y1="70"
+              x2="360"
+              y2="320"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="375"
+              y1="70"
+              x2="375"
+              y2="320"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="390"
+              y1="70"
+              x2="390"
+              y2="320"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="405"
+              y1="70"
+              x2="405"
+              y2="320"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="420"
+              y1="70"
+              x2="420"
+              y2="320"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="340"
+              y1="130"
+              x2="440"
+              y2="130"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="340"
+              y1="155"
+              x2="440"
+              y2="155"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="340"
+              y1="180"
+              x2="440"
+              y2="180"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="340"
+              y1="205"
+              x2="440"
+              y2="205"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="340"
+              y1="230"
+              x2="440"
+              y2="230"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+            <line
+              x1="340"
+              y1="255"
+              x2="440"
+              y2="255"
+              stroke="#454545"
+              stroke-width="1.5"
+            />
+          </g>
+
+          <!-- Shine on roll -->
+          <ellipse cx="390" cy="195" rx="52" ry="125" fill="url(#roll-shine)" />
+
+          <!-- Roll top cap -->
+          <ellipse cx="390" cy="70" rx="52" ry="15" fill="url(#roll-cap)" />
+          <ellipse cx="390" cy="70" rx="36" ry="10" fill="#252525" />
+
+          <!-- Inner hole -->
+          <ellipse cx="390" cy="195" rx="20" ry="48" fill="#0a0a0a" />
+
+          <!-- Ground shadow -->
+          <ellipse cx="350" cy="375" rx="170" ry="18" fill="rgba(0,0,0,.12)" />
+        </svg>
+      </div>
+      <!-- /hero__visual -->
+    </div>
+  </div>
+</section>
+
+      <section
+  class="usecases section"
+  id="usecases"
+  aria-labelledby="usecases-title"
+>
+  <div class="container">
+    <!-- Section head -->
+    <div class="usecases__head">
+      <p class="label">Застосування</p>
+      <h2 class="section-title section-title--white" id="usecases-title">
+        Де використовується наша сітка
+      </h2>
+      <p class="usecases__subtitle">
+        Два ключові напрямки — садівництво та будівництво. Одне рішення для
+        принципово різних завдань.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="usecases__grid">
+      <!-- CARD 1 — Plant support -->
+      <article
+        class="usecase-card usecase-card--plant"
+        aria-label="Опора для рослин"
+      >
+        <!-- Background glow -->
+        <div class="usecase-card__glow" aria-hidden="true"></div>
+
+        <!-- Large faded number -->
+        <span class="usecase-card__num" aria-hidden="true">01</span>
+
+        <!-- Icon -->
+        <div class="usecase-card__icon" aria-hidden="true">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <!-- Leaf + stem -->
+            <path d="M12 22V12" />
+            <path d="M12 12C12 7 7 4 3 5c1 4 4 7 9 7z" />
+            <path d="M12 12c0-5 5-8 9-7-1 4-4 7-9 7z" />
+          </svg>
+        </div>
+
+        <!-- Tag -->
+        <span class="usecase-card__tag">Садівництво &amp; ландшафт</span>
+
+        <!-- Title -->
+        <h3 class="usecase-card__title">Опора для рослин</h3>
+
+        <!-- Description -->
+        <p class="usecase-card__desc">
+          Ідеальна сітка для підтримки виноградників, огірків, томатів, квасолі
+          та декоративних рослин. Легко монтується, не деформується від вологи і
+          слугує десятиліттями без іржі та запаху.
+        </p>
+
+        <!-- Feature list -->
+        <ul class="usecase-card__list" role="list" aria-label="Особливості">
+          <li class="usecase-card__item">
+            <span class="usecase-card__item-dot" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Не шкодить корінню — нейтральний pH
+          </li>
+          <li class="usecase-card__item">
+            <span class="usecase-card__item-dot" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Легка — не потребує важких опор
+          </li>
+          <li class="usecase-card__item">
+            <span class="usecase-card__item-dot" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Стійка до UV, вологи і добрив
+          </li>
+          <li class="usecase-card__item">
+            <span class="usecase-card__item-dot" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Підходить для теплиць і відкритого ґрунту
+          </li>
+        </ul>
+
+        <!-- CTA link -->
+        <a
+          href="#contact"
+          class="usecase-card__cta"
+          aria-label="Замовити сітку для рослин"
+        >
+          Дізнатись більше
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </article>
+      <!-- /usecase-card--plant -->
+
+      <!-- CARD 2 — Construction -->
+      <article
+        class="usecase-card usecase-card--construction reveal"
+        aria-label="Будівельна арматура"
+      >
+        <!-- Background glow -->
+        <div class="usecase-card__glow" aria-hidden="true"></div>
+
+        <!-- Large faded number -->
+        <span class="usecase-card__num" aria-hidden="true">02</span>
+
+        <!-- Icon -->
+        <div class="usecase-card__icon" aria-hidden="true">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <!-- Building blocks -->
+            <rect x="3" y="12" width="8" height="9" rx="1" />
+            <rect x="13" y="8" width="8" height="13" rx="1" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="8" y1="3" x2="8" y2="12" />
+            <line x1="16" y1="3" x2="16" y2="8" />
+          </svg>
+        </div>
+
+        <!-- Tag -->
+        <span class="usecase-card__tag">Будівництво &amp; армування</span>
+
+        <!-- Title -->
+        <h3 class="usecase-card__title">Будівельна арматура</h3>
+
+        <!-- Description -->
+        <p class="usecase-card__desc">
+          Замінює сталеву сітку у фундаментах, стяжках, підпорних стінах та
+          дорожньому покритті. У 3–4 рази легша за метал, не корозує і не
+          проводить електрику — безпечно і довговічно.
+        </p>
+
+        <!-- Feature list -->
+        <ul class="usecase-card__list" role="list" aria-label="Особливості">
+          <li class="usecase-card__item">
+            <span class="usecase-card__item-dot" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Міцність на розтяг &gt; 1000 МПа
+          </li>
+          <li class="usecase-card__item">
+            <span class="usecase-card__item-dot" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Не корозує — жодного ефекту розшарування
+          </li>
+          <li class="usecase-card__item">
+            <span class="usecase-card__item-dot" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Підходить для агресивних ґрунтів і морської зони
+          </li>
+          <li class="usecase-card__item">
+            <span class="usecase-card__item-dot" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Зменшує навантаження та транспортні витрати
+          </li>
+        </ul>
+
+        <!-- CTA link -->
+        <a
+          href="#contact"
+          class="usecase-card__cta"
+          aria-label="Замовити будівельну сітку"
+        >
+          Отримати прайс
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </article>
+      <!-- /usecase-card--construction -->
+    </div>
+    <!-- /usecases__grid -->
+  </div>
+</section>
+
+      <section class="advantages section" id="advantages" aria-labelledby="adv-title">
+  <div class="container">
+    <div class="advantages__head reveal">
+      <p class="label">Переваги</p>
+      <h2 class="section-title" id="adv-title">Чому обирають нас</h2>
+    </div>
+ 
+    <div class="advantages__grid" role="list" aria-label="Перелік переваг">
+ 
+      <div class="adv-card reveal" role="listitem">
+        <div class="adv-card__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="adv-card__title">Висока міцність</p>
+        <p class="adv-card__text">У декілька разів міцніша за металеву та пластикову сітку.</p>
+      </div>
+ 
+      <div class="adv-card reveal" role="listitem">
+        <div class="adv-card__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <p class="adv-card__title">Стійкість до корозії</p>
+        <p class="adv-card__text">Не іржавіє та не піддається впливу хімічних речовин.</p>
+      </div>
+ 
+      <div class="adv-card reveal" role="listitem">
+        <div class="adv-card__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </div>
+        <p class="adv-card__title">Стійкість до УФ</p>
+        <p class="adv-card__text">Не руйнується під впливом сонячних променів.</p>
+      </div>
+ 
+      <div class="adv-card reveal" role="listitem">
+        <div class="adv-card__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <p class="adv-card__title">Легка вага</p>
+        <p class="adv-card__text">Зручна в транспортуванні та монтажі, не створює навантажень.</p>
+      </div>
+ 
+      <div class="adv-card reveal" role="listitem">
+        <div class="adv-card__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><text x="12" y="19" text-anchor="middle" font-size="7" fill="currentColor" font-family="sans-serif" font-weight="700">50</text></svg>
+        </div>
+        <p class="adv-card__title">Довговічність</p>
+        <p class="adv-card__text">Термін служби до 50 років без втрати властивостей.</p>
+      </div>
+ 
+      <div class="adv-card reveal" role="listitem">
+        <div class="adv-card__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        </div>
+        <p class="adv-card__title">Екологічність</p>
+        <p class="adv-card__text">Виготовлена з безпечних матеріалів, не шкодить довкіллю.</p>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+      <section class="gallery section" id="gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="gallery__head reveal">
+      <p class="label">Галерея</p>
+      <h2 class="section-title" id="gallery-title">Фото нашої сітки</h2>
+    </div>
+
+    <div class="gallery__grid reveal" role="list" aria-label="Фото продукції">
+      <!-- Item 1 — large (spans 2 rows on tablet+) -->
+      <div
+        class="gallery__item"
+        role="listitem"
+        aria-label="Плоска сітка крупним планом"
+      >
+        <svg
+          viewBox="0 0 400 440"
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 100%; height: 100%"
+          role="img"
+          aria-hidden="true"
+        >
+          <defs>
+            <pattern
+              id="gp1"
+              width="18"
+              height="18"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect width="18" height="18" fill="#1e1e1e" />
+              <line
+                x1="0"
+                y1="0"
+                x2="18"
+                y2="0"
+                stroke="#3c3c3c"
+                stroke-width="2.5"
+              />
+              <line
+                x1="0"
+                y1="9"
+                x2="18"
+                y2="9"
+                stroke="#2a2a2a"
+                stroke-width="1"
+              />
+              <line
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="18"
+                stroke="#3c3c3c"
+                stroke-width="2.5"
+              />
+              <line
+                x1="9"
+                y1="0"
+                x2="9"
+                y2="18"
+                stroke="#2a2a2a"
+                stroke-width="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="400" height="440" fill="url(#gp1)" />
+          <radialGradient id="glow1" cx="50%" cy="50%">
+            <stop offset="0%" stop-color="rgba(58,125,68,.18)" />
+            <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+          </radialGradient>
+          <rect width="400" height="440" fill="url(#glow1)" />
+        </svg>
+        <div class="gallery__overlay" aria-hidden="true"></div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery__item" role="listitem" aria-label="Рулон сітки">
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 100%; height: 100%"
+          aria-hidden="true"
+        >
+          <rect width="200" height="200" fill="#141414" />
+          <ellipse
+            cx="100"
+            cy="105"
+            rx="65"
+            ry="85"
+            fill="#252525"
+            stroke="#3a3a3a"
+            stroke-width="2"
+          />
+          <ellipse
+            cx="100"
+            cy="20"
+            rx="65"
+            ry="18"
+            fill="#2f2f2f"
+            stroke="#444"
+            stroke-width="1.5"
+          />
+          <ellipse cx="100" cy="105" rx="24" ry="32" fill="#0d0d0d" />
+          <line
+            x1="76"
+            y1="20"
+            x2="76"
+            y2="190"
+            stroke="#3a3a3a"
+            stroke-width="1.2"
+          />
+          <line
+            x1="100"
+            y1="20"
+            x2="100"
+            y2="190"
+            stroke="#3a3a3a"
+            stroke-width="1.2"
+          />
+          <line
+            x1="124"
+            y1="20"
+            x2="124"
+            y2="190"
+            stroke="#3a3a3a"
+            stroke-width="1.2"
+          />
+        </svg>
+        <div class="gallery__overlay" aria-hidden="true"></div>
+      </div>
+
+      <!-- Item 3 -->
+      <div
+        class="gallery__item"
+        role="listitem"
+        aria-label="Огородження з сітки"
+      >
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 100%; height: 100%"
+          aria-hidden="true"
+        >
+          <rect width="200" height="200" fill="#2a4a35" />
+          <pattern
+            id="gp3"
+            width="16"
+            height="16"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="16" height="16" fill="#2d5038" />
+            <rect
+              x="2"
+              y="2"
+              width="12"
+              height="12"
+              fill="none"
+              stroke="#3a6b45"
+              stroke-width="1"
+            />
+          </pattern>
+          <rect width="200" height="200" fill="url(#gp3)" />
+          <rect x="8" y="55" width="7" height="130" rx="1" fill="#1a3028" />
+          <rect x="96" y="55" width="7" height="130" rx="1" fill="#1a3028" />
+          <rect x="184" y="55" width="7" height="130" rx="1" fill="#1a3028" />
+          <rect x="8" y="75" width="183" height="4" rx="1" fill="#1a3028" />
+          <rect x="8" y="115" width="183" height="4" rx="1" fill="#1a3028" />
+          <rect x="8" y="155" width="183" height="4" rx="1" fill="#1a3028" />
+        </svg>
+        <div class="gallery__overlay" aria-hidden="true"></div>
+      </div>
+
+      <!-- Item 4 -->
+      <div
+        class="gallery__item"
+        role="listitem"
+        aria-label="Сітка для армування бетону"
+      >
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 100%; height: 100%"
+          aria-hidden="true"
+        >
+          <rect width="200" height="200" fill="#555" />
+          <pattern
+            id="gp4a"
+            width="10"
+            height="10"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="10" height="10" fill="#555" />
+            <rect x="0" y="0" width="5" height="5" fill="#5e5e5e" />
+            <rect x="5" y="5" width="5" height="5" fill="#5e5e5e" />
+          </pattern>
+          <rect width="200" height="200" fill="url(#gp4a)" />
+          <rect
+            x="18"
+            y="95"
+            width="164"
+            height="68"
+            rx="2"
+            fill="rgba(0,0,0,.15)"
+          />
+          <pattern
+            id="gp4b"
+            width="14"
+            height="14"
+            patternUnits="userSpaceOnUse"
+          >
+            <line
+              x1="0"
+              y1="7"
+              x2="14"
+              y2="7"
+              stroke="rgba(15,15,15,.75)"
+              stroke-width="2.2"
+            />
+            <line
+              x1="7"
+              y1="0"
+              x2="7"
+              y2="14"
+              stroke="rgba(15,15,15,.75)"
+              stroke-width="2.2"
+            />
+          </pattern>
+          <rect x="18" y="95" width="164" height="68" fill="url(#gp4b)" />
+        </svg>
+        <div class="gallery__overlay" aria-hidden="true"></div>
+      </div>
+
+      <!-- Item 5 -->
+      <div
+        class="gallery__item"
+        role="listitem"
+        aria-label="Композитна сітка в розрізі"
+      >
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 100%; height: 100%"
+          aria-hidden="true"
+        >
+          <rect width="200" height="200" fill="#111" />
+          <pattern
+            id="gp5"
+            width="22"
+            height="22"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="22" height="22" fill="#181818" />
+            <line
+              x1="0"
+              y1="11"
+              x2="22"
+              y2="11"
+              stroke="#383838"
+              stroke-width="3"
+            />
+            <line
+              x1="11"
+              y1="0"
+              x2="11"
+              y2="22"
+              stroke="#383838"
+              stroke-width="3"
+            />
+          </pattern>
+          <rect width="200" height="200" fill="url(#gp5)" />
+          <radialGradient id="glow5" cx="50%" cy="50%">
+            <stop offset="0%" stop-color="rgba(58,125,68,.15)" />
+            <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+          </radialGradient>
+          <rect width="200" height="200" fill="url(#glow5)" />
+        </svg>
+        <div class="gallery__overlay" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__visual reveal">
+        <svg
+          viewBox="0 0 380 320"
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 100%; border-radius: 18px"
+          role="img"
+          aria-label="Зображення композитної сітки"
+        >
+          <defs>
+            <pattern
+              id="aboutMesh"
+              width="24"
+              height="24"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect width="24" height="24" fill="#181818" />
+              <line
+                x1="0"
+                y1="0"
+                x2="24"
+                y2="0"
+                stroke="#3d3d3d"
+                stroke-width="3"
+              />
+              <line
+                x1="0"
+                y1="12"
+                x2="24"
+                y2="12"
+                stroke="#2d2d2d"
+                stroke-width="1"
+              />
+              <line
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="24"
+                stroke="#3d3d3d"
+                stroke-width="3"
+              />
+              <line
+                x1="12"
+                y1="0"
+                x2="12"
+                y2="24"
+                stroke="#2d2d2d"
+                stroke-width="1"
+              />
+            </pattern>
+            <radialGradient id="aboutGlow" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="rgba(58,125,68,.22)" />
+              <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+            </radialGradient>
+          </defs>
+          <rect width="380" height="320" rx="18" fill="url(#aboutMesh)" />
+          <rect width="380" height="320" rx="18" fill="url(#aboutGlow)" />
+          <text
+            x="190"
+            y="168"
+            text-anchor="middle"
+            font-family="Oswald,sans-serif"
+            font-size="20"
+            fill="rgba(255,255,255,.1)"
+            letter-spacing="4"
+          >
+            COMPOSITE MESH
+          </text>
+        </svg>
+      </div>
+
+      <div class="about__content reveal">
+        <div class="about__head">
+          <p class="label">Опис сітки</p>
+          <h2 class="section-title" id="about-title">
+            Що таке композитна сітка?
+          </h2>
+        </div>
+        <ul class="about__list" role="list">
+          <li class="about__item">
+            <span class="about__item-check" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Не іржавіє та не гниє
+          </li>
+          <li class="about__item">
+            <span class="about__item-check" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Легка в різанні та монтажі
+          </li>
+          <li class="about__item">
+            <span class="about__item-check" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Стійка до лугів, кислот і солей
+          </li>
+          <li class="about__item">
+            <span class="about__item-check" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Економічна та довговічна
+          </li>
+          <li class="about__item">
+            <span class="about__item-check" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Висока міцність при малій вазі
+          </li>
+          <li class="about__item">
+            <span class="about__item-check" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 12 10" fill="none">
+                <polyline
+                  points="1 5 4.5 8.5 11 1.5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            Підходить для різних сфер застосування
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews section" id="reviews" aria-labelledby="reviews-title">
+  <div class="container">
+    <div class="reviews__head reveal">
+      <p class="label">Відгуки</p>
+      <h2 class="section-title" id="reviews-title">Що кажуть наші клієнти</h2>
+    </div>
+
+    <div class="reviews__grid" role="list" aria-label="Відгуки клієнтів">
+      <article class="review-card reveal" role="listitem">
+        <div class="review-card__quote" aria-hidden="true">"</div>
+        <p class="review-card__text">
+          Відмінна якість сітки! Використовуємо для армування фундаментів —
+          результат не піддається критиці. Маємо вагому міцність на розрив та
+          довговічність.
+        </p>
+        <div class="review-card__author">
+          <div class="review-card__avatar" aria-hidden="true">ІП</div>
+          <div>
+            <p class="review-card__name">Іван Петренко</p>
+            <p class="review-card__role">Будівельна компанія</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card reveal" role="listitem">
+        <div class="review-card__quote" aria-hidden="true">"</div>
+        <p class="review-card__text">
+          Купували сітку для огорожі на об'єкт. Легка, але дуже міцна. Не
+          іржавіє, виглядає сучасно. Рекомендуємо!
+        </p>
+        <div class="review-card__author">
+          <div class="review-card__avatar" aria-hidden="true">ОК</div>
+          <div>
+            <p class="review-card__name">Олена Коваль</p>
+            <p class="review-card__role">Менеджер з постачання</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card reveal" role="listitem">
+        <div class="review-card__quote" aria-hidden="true">"</div>
+        <p class="review-card__text">
+          Працюємо з цією сіткою вже не перший рік. Якість стабільна, служить
+          довго, клієнти задоволені.
+        </p>
+        <div class="review-card__author">
+          <div class="review-card__avatar" aria-hidden="true">СМ</div>
+          <div>
+            <p class="review-card__name">Сергій Мельник</p>
+            <p class="review-card__role">Підрядник</p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="reviews__dots" role="tablist" aria-label="Сторінки відгуків">
+      <button
+        class="reviews__dot is-active"
+        role="tab"
+        aria-selected="true"
+        aria-label="Сторінка 1"
+      ></button>
+      <button
+        class="reviews__dot"
+        role="tab"
+        aria-selected="false"
+        aria-label="Сторінка 2"
+      ></button>
+      <button
+        class="reviews__dot"
+        role="tab"
+        aria-selected="false"
+        aria-label="Сторінка 3"
+      ></button>
+    </div>
+  </div>
+</section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact__inner">
+      <!-- Info / perks -->
+      <div class="contact__info">
+        <div class="contact__info-head reveal">
+          <p class="label">Замовити</p>
+          <h2 class="section-title" id="contact-title">
+            Залиште заявку<br />і ми зв'яжемось з вами
+          </h2>
+        </div>
+        <div class="contact__perks reveal">
+          <div class="contact__perk">
+            <div class="contact__perk-icon" aria-hidden="true">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 9.81 19.79 19.79 0 011.18 2H4a2 2 0 012 1.72c.13 1 .37 1.98.71 2.91a2 2 0 01-.45 2.11L5.09 9.91a16 16 0 006.99 6.99l1.17-1.17a2 2 0 012.11-.45c.93.34 1.91.58 2.91.71A2 2 0 0122 16.92z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="contact__perk-title">Безкоштовна консультація</p>
+              <p class="contact__perk-text">
+                Допоможемо підібрати оптимальний варіант.
+              </p>
+            </div>
+          </div>
+          <div class="contact__perk">
+            <div class="contact__perk-icon" aria-hidden="true">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="1" y="3" width="15" height="13" rx="2" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+            </div>
+            <div>
+              <p class="contact__perk-title">Швидка доставка</p>
+              <p class="contact__perk-text">Доставляємо по всій Україні.</p>
+            </div>
+          </div>
+          <div class="contact__perk">
+            <div class="contact__perk-icon" aria-hidden="true">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <polyline points="9 12 11 14 15 10" />
+              </svg>
+            </div>
+            <div>
+              <p class="contact__perk-title">Гарантія якості</p>
+              <p class="contact__perk-text">
+                Ми впевнені в якості нашої продукції.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /contact__info -->
+
+      <!-- Form -->
+      <div class="contact__form-wrap reveal">
+        <form
+          class="contact-form"
+          id="js-contact-form"
+          novalidate
+          aria-label="Форма зворотного зв'язку"
+        >
+          <!-- Name -->
+          <div class="form-field" id="field-name">
+            <label class="form-label" for="inp-name"
+              >Ваше ім'я <abbr title="обов'язкове поле">*</abbr></label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="inp-name"
+              name="name"
+              placeholder="Іван Петренко"
+              autocomplete="name"
+              aria-required="true"
+              aria-describedby="err-name"
+            />
+            <span class="form-error-msg" id="err-name" role="alert"
+              >Будь ласка, введіть ваше ім'я</span
+            >
+          </div>
+
+          <!-- Phone -->
+          <div class="form-field" id="field-phone">
+            <label class="form-label" for="inp-phone"
+              >Телефон <abbr title="обов'язкове поле">*</abbr></label
+            >
+            <input
+              class="form-control"
+              type="tel"
+              id="inp-phone"
+              name="phone"
+              placeholder="+38 (0__) ___ __ __"
+              autocomplete="tel"
+              aria-required="true"
+              aria-describedby="err-phone"
+              maxlength="19"
+            />
+            <span class="form-error-msg" id="err-phone" role="alert"
+              >Введіть коректний номер телефону</span
+            >
+          </div>
+
+          <!-- Email -->
+          <div class="form-field form-field--full" id="field-email">
+            <label class="form-label" for="inp-email">E-mail</label>
+            <input
+              class="form-control"
+              type="email"
+              id="inp-email"
+              name="email"
+              placeholder="example@mail.com"
+              autocomplete="email"
+              aria-describedby="err-email"
+            />
+            <span class="form-error-msg" id="err-email" role="alert"
+              >Введіть коректний email</span
+            >
+          </div>
+
+          <!-- Message -->
+          <div class="form-field form-field--full">
+            <label class="form-label" for="inp-message">Повідомлення</label>
+            <textarea
+              class="form-control"
+              id="inp-message"
+              name="message"
+              placeholder="Опишіть ваш запит…"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-submit-wrap">
+            <button
+              type="submit"
+              class="btn btn--primary btn--submit"
+              id="js-submit-btn"
+            >
+              <span class="btn-text">Надіслати заявку</span>
+              <svg
+                class="spinner"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M21 12a9 9 0 11-6.219-8.56" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Privacy note -->
+          <p class="form-privacy">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0110 0v4" />
+            </svg>
+            Ми не передаємо ваші дані третім особам
+          </p>
+        </form>
+
+        <!-- Success message (hidden until submit) -->
+        <div
+          class="form-success"
+          id="js-form-success"
+          aria-live="polite"
+          aria-hidden="true"
+        >
+          <div class="form-success__icon" aria-hidden="true">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <h3 class="form-success__title">Заявку отримано!</h3>
+          <p class="form-success__text">
+            Ми зв'яжемось з вами найближчим часом. Дякуємо!
+          </p>
+        </div>
+      </div>
+      <!-- /contact__form-wrap -->
+    </div>
+  </div>
+</section>
+
+      <footer class="site-footer" aria-label="Підвал сайту">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="logo" aria-label="Composite — на головну">
+          <div class="logo__main">
+            <div class="logo__icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span class="logo__name">COMPOSITE</span>
+          </div>
+          <span class="logo__sub">Композитна сітка</span>
+        </a>
+        <p class="footer__brand-text">
+          Якісна композитна сітка для будівництва та інших потреб. Міцність.
+          Надійність. Довговічність.
+        </p>
+        <div class="footer__socials" aria-label="Соціальні мережі">
+          <a href="#" class="footer__social" aria-label="Facebook">f</a>
+          <a href="#" class="footer__social" aria-label="Instagram">in</a>
+          <a href="#" class="footer__social" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__col-title">Меню</p>
+        <ul class="footer__nav" role="list">
+          <li><a href="#advantages">Переваги</a></li>
+          <li><a href="#usecases">Застосування</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#about">Опис сітки</a></li>
+          <li><a href="#contact">Замовити</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Контакти</p>
+        <address style="font-style: normal">
+          <div class="footer__contact-item">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 9.81 19.79 19.79 0 011.18 2H4a2 2 0 012 1.72c.13 1 .37 1.98.71 2.91a2 2 0 01-.45 2.11L5.09 9.91a16 16 0 006.99 6.99l1.17-1.17a2 2 0 012.11-.45c.93.34 1.91.58 2.91.71A2 2 0 0122 16.92z"
+              /></svg
+            ><a href="tel:+380678791201">+38 (067) 879 12 01</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" /></svg
+            ><a href="mailto:info@composite-sitka.ua"
+              >info@composite-sitka.ua</a
+            >
+          </div>
+          <div class="footer__contact-item">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" /></svg
+            ><span>м. Київ, вул. Будівельна, 12</span>
+          </div>
+        </address>
+      </div>
+      <div>
+        <p class="footer__col-title">Графік роботи</p>
+        <div class="footer__schedule">
+          <div>Пн – Пт: 9:00 – 18:00</div>
+          <div>Сб: 10:00 – 15:00</div>
+          <div class="footer__schedule-off">Нд: вихідний</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2024 Composite. Всі права захищені.</div>
+  </div>
+</footer>
+
+    </main>
+
+    \
+
+    <script src="./main.js"></script>
+  </body>
+</html>
