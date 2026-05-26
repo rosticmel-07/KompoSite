@@ -1,0 +1,237 @@
+<section class="contact section" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact__inner">
+      <!-- Info / perks -->
+      <div class="contact__info">
+        <div class="contact__info-head reveal">
+          <p class="label">Замовити</p>
+          <h2 class="section-title" id="contact-title">
+            Залиште заявку<br />і ми зв'яжемось з вами
+          </h2>
+        </div>
+        <div class="contact__perks reveal">
+          <div class="contact__perk">
+            <div class="contact__perk-icon" aria-hidden="true">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 9.81 19.79 19.79 0 011.18 2H4a2 2 0 012 1.72c.13 1 .37 1.98.71 2.91a2 2 0 01-.45 2.11L5.09 9.91a16 16 0 006.99 6.99l1.17-1.17a2 2 0 012.11-.45c.93.34 1.91.58 2.91.71A2 2 0 0122 16.92z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="contact__perk-title">Безкоштовна консультація</p>
+              <p class="contact__perk-text">
+                Допоможемо підібрати оптимальний варіант.
+              </p>
+            </div>
+          </div>
+          <div class="contact__perk">
+            <div class="contact__perk-icon" aria-hidden="true">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="1" y="3" width="15" height="13" rx="2" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+            </div>
+            <div>
+              <p class="contact__perk-title">Швидка доставка</p>
+              <p class="contact__perk-text">Доставляємо по всій Україні.</p>
+            </div>
+          </div>
+          <div class="contact__perk">
+            <div class="contact__perk-icon" aria-hidden="true">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <polyline points="9 12 11 14 15 10" />
+              </svg>
+            </div>
+            <div>
+              <p class="contact__perk-title">Гарантія якості</p>
+              <p class="contact__perk-text">
+                Ми впевнені в якості нашої продукції.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /contact__info -->
+
+      <!-- Form -->
+      <div class="contact__form-wrap reveal">
+        <form
+          class="contact-form"
+          id="js-contact-form"
+          novalidate
+          aria-label="Форма зворотного зв'язку"
+        >
+          <!-- Name -->
+          <div class="form-field" id="field-name">
+            <label class="form-label" for="inp-name"
+              >Ваше ім'я <abbr title="обов'язкове поле">*</abbr></label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="inp-name"
+              name="name"
+              placeholder="Іван Петренко"
+              autocomplete="name"
+              aria-required="true"
+              aria-describedby="err-name"
+            />
+            <span class="form-error-msg" id="err-name" role="alert"
+              >Будь ласка, введіть ваше ім'я</span
+            >
+          </div>
+
+          <!-- Phone -->
+          <div class="form-field" id="field-phone">
+            <label class="form-label" for="inp-phone"
+              >Телефон <abbr title="обов'язкове поле">*</abbr></label
+            >
+            <input
+              class="form-control"
+              type="tel"
+              id="inp-phone"
+              name="phone"
+              placeholder="+38 (0__) ___ __ __"
+              autocomplete="tel"
+              aria-required="true"
+              aria-describedby="err-phone"
+              maxlength="19"
+            />
+            <span class="form-error-msg" id="err-phone" role="alert"
+              >Введіть коректний номер телефону</span
+            >
+          </div>
+
+          <!-- Email -->
+          <div class="form-field form-field--full" id="field-email">
+            <label class="form-label" for="inp-email">E-mail</label>
+            <input
+              class="form-control"
+              type="email"
+              id="inp-email"
+              name="email"
+              placeholder="example@mail.com"
+              autocomplete="email"
+              aria-describedby="err-email"
+            />
+            <span class="form-error-msg" id="err-email" role="alert"
+              >Введіть коректний email</span
+            >
+          </div>
+
+          <!-- Message -->
+          <div class="form-field form-field--full">
+            <label class="form-label" for="inp-message">Повідомлення</label>
+            <textarea
+              class="form-control"
+              id="inp-message"
+              name="message"
+              placeholder="Опишіть ваш запит…"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-submit-wrap">
+            <button
+              type="submit"
+              class="btn btn--primary btn--submit"
+              id="js-submit-btn"
+            >
+              <span class="btn-text">Надіслати заявку</span>
+              <svg
+                class="spinner"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M21 12a9 9 0 11-6.219-8.56" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Privacy note -->
+          <p class="form-privacy">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0110 0v4" />
+            </svg>
+            Ми не передаємо ваші дані третім особам
+          </p>
+        </form>
+
+        <!-- Success message (hidden until submit) -->
+        <div
+          class="form-success"
+          id="js-form-success"
+          aria-live="polite"
+          aria-hidden="true"
+        >
+          <div class="form-success__icon" aria-hidden="true">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <h3 class="form-success__title">Заявку отримано!</h3>
+          <p class="form-success__text">
+            Ми зв'яжемось з вами найближчим часом. Дякуємо!
+          </p>
+        </div>
+      </div>
+      <!-- /contact__form-wrap -->
+    </div>
+  </div>
+</section>

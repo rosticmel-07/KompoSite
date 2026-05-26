@@ -1,0 +1,315 @@
+/* =============================================================
+   BASE — Reset · Variables · Typography · Container · Utilities
+   ============================================================= */
+
+/* ----- Google Fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap');
+
+/* --- ІМПОРТИ СЕКЦІЙ  --- */
+@import url('css/header.css');
+@import url('css/hero.css');
+@import url('css/usecases.css');
+@import url('css/advantages.css');
+@import url('css/gallery.css');
+@import url('css/about.css');
+@import url('css/reviews.css');
+@import url('css/contact.css');
+@import url('css/footer.css');
+
+/* ----- CSS Variables ----- */
+:root {
+  --green: #3a7d44;
+  --green-dark: #2d6235;
+  --green-light: #4e9c5c;
+  --green-dim: #e8f4eb;
+  --green-mid: #c5e3cb;
+
+  --black: #111111;
+  --dark: #1a1c1a;
+  --dark-2: #222824;
+  --gray: #f5f6f4;
+  --gray-2: #ececec;
+  --mid: #6b7280;
+  --border: #e2e5e1;
+  --white: #ffffff;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 18px;
+
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.06);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+  --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.14);
+
+  --transition: 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --font-body: 'Manrope', sans-serif;
+  --font-display: 'Oswald', sans-serif;
+}
+
+/* ----- Reset ----- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--black);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+/* ----- Container ----- */
+/* Mobile (default) */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+/* ----- Section Spacing ----- */
+.section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* ----- Section Labels & Titles ----- */
+.label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 5vw, 42px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.12;
+  color: var(--black);
+}
+
+.section-title--white {
+  color: var(--white);
+}
+
+/* ----- Buttons ----- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  border: 2px solid transparent;
+  transition: var(--transition);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--green);
+  color: var(--white);
+  border-color: var(--green);
+}
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(58, 125, 68, 0.28);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--black);
+  border-color: var(--border);
+}
+.btn--outline:hover,
+.btn--outline:focus-visible {
+  border-color: var(--green);
+  color: var(--green);
+  transform: translateY(-2px);
+}
+
+.btn--outline-white {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.btn--outline-white:hover,
+.btn--outline-white:focus-visible {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn--full {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ----- Scroll Reveal ----- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ----- Keyframes ----- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-36px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.93);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-ring {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(58, 125, 68, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(58, 125, 68, 0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg) scale(1.04);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-1deg) scale(1.05);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-140%) translateY(-50%);
+  }
+  to {
+    transform: translateX(-104%) translateY(-50%);
+  }
+}
+@keyframes stretch {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(100%) scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(100%) scale(1);
+  }
+}

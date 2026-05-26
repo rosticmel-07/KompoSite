@@ -1,0 +1,263 @@
+.usecases {
+  background: var(--dark);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Faint mesh texture on dark bg */
+.usecases::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+.usecases__head {
+  text-align: center;
+  margin-bottom: 52px;
+  position: relative;
+  z-index: 1;
+}
+
+.usecases__head .label {
+  color: var(--green-light);
+}
+
+.usecases__subtitle {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 12px;
+  max-width: 480px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+/* Cards grid */
+.usecases__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .usecases__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+}
+
+/* Individual card */
+.usecase-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: var(--dark-2);
+  padding: 40px 36px 36px;
+  cursor: default;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.usecase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+  border-color: rgba(58, 125, 68, 0.5);
+}
+
+/* Coloured glow in card corner */
+.usecase-card__glow {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.18;
+  transition: opacity var(--transition);
+}
+
+.usecase-card:hover .usecase-card__glow {
+  opacity: 0.28;
+}
+
+.usecase-card--plant .usecase-card__glow {
+  background: radial-gradient(circle, #6fcf97 0%, transparent 70%);
+}
+
+.usecase-card--construction .usecase-card__glow {
+  background: radial-gradient(circle, #f2c94c 0%, transparent 70%);
+}
+
+/* Number badge */
+.usecase-card__num {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-family: var(--font-display);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.04);
+  user-select: none;
+  pointer-events: none;
+  transition: color var(--transition);
+}
+
+.usecase-card:hover .usecase-card__num {
+  color: rgba(255, 255, 255, 0.07);
+}
+
+/* Icon */
+.usecase-card__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.usecase-card:hover .usecase-card__icon {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+.usecase-card--plant .usecase-card__icon {
+  background: rgba(111, 207, 151, 0.14);
+  color: #6fcf97;
+}
+
+.usecase-card--construction .usecase-card__icon {
+  background: rgba(242, 201, 76, 0.14);
+  color: #f2c94c;
+}
+
+/* Tag chip */
+.usecase-card__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.usecase-card--plant .usecase-card__tag {
+  background: rgba(111, 207, 151, 0.12);
+  color: #6fcf97;
+  border: 1px solid rgba(111, 207, 151, 0.25);
+}
+
+.usecase-card--construction .usecase-card__tag {
+  background: rgba(242, 201, 76, 0.12);
+  color: #f2c94c;
+  border: 1px solid rgba(242, 201, 76, 0.25);
+}
+
+/* Title */
+.usecase-card__title {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
+/* Description */
+.usecase-card__desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.75;
+}
+
+/* Feature list inside card */
+.usecase-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.usecase-card__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.usecase-card__item-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.usecase-card--plant .usecase-card__item-dot {
+  background: rgba(111, 207, 151, 0.2);
+  color: #6fcf97;
+}
+
+.usecase-card--construction .usecase-card__item-dot {
+  background: rgba(242, 201, 76, 0.2);
+  color: #f2c94c;
+}
+
+/* CTA link at bottom of card */
+.usecase-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  transition:
+    gap var(--transition),
+    opacity var(--transition);
+  opacity: 0.65;
+  margin-top: auto;
+}
+
+.usecase-card--plant .usecase-card__cta {
+  color: #6fcf97;
+}
+.usecase-card--construction .usecase-card__cta {
+  color: #f2c94c;
+}
+
+.usecase-card:hover .usecase-card__cta {
+  gap: 10px;
+  opacity: 1;
+}
+
+/* Divider line between cards on mobile */
+@media only screen and (max-width: 767px) {
+  .usecase-card + .usecase-card::before {
+    content: '';
+    display: none;
+  }
+}
