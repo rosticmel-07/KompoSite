@@ -141,13 +141,13 @@
 }
 
 /* CTA button — pulse animation */
-.nav__cta {
-  animation: pulse-ring 2.8s infinite;
+.btn.nav__cta {
   display: none;
+  animation: pulse-ring 2.8s infinite;
 }
 
-@media only screen and (min-width: 640px) {
-  .nav__cta {
+@media only screen and (min-width: 1440px) {
+  .btn.nav__cta {
     display: inline-flex;
   }
 }

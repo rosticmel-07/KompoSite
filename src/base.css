@@ -6,15 +6,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap');
 
 /* --- ІМПОРТИ СЕКЦІЙ  --- */
-@import url('css/header.css');
-@import url('css/hero.css');
-@import url('css/usecases.css');
-@import url('css/advantages.css');
-@import url('css/gallery.css');
-@import url('css/about.css');
-@import url('css/reviews.css');
-@import url('css/contact.css');
-@import url('css/footer.css');
+@import url('./css/header.css');
+@import url('./css/hero.css');
+@import url('./css/usecases.css');
+@import url('./css/advantages.css');
+@import url('./css/gallery.css');
+@import url('./css/about.css');
+@import url('./css/reviews.css');
+@import url('./css/contact.css');
+@import url('./css/footer.css');
 
 /* ----- CSS Variables ----- */
 :root {
