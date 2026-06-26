@@ -214,10 +214,15 @@ function initContactForm() {
 
       await response.json();
 
+// Надсилаємо подію Lead у Meta Pixel після успішної заявки
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+      
       form.style.display = 'none';
-
+      
       success.classList.add('is-visible');
-
+      
       success.setAttribute('aria-hidden', 'false');
 
       setTimeout(() => {
