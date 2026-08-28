@@ -258,6 +258,43 @@ function initContactForm() {
   });
 }
 
+function initPriceTabs() {
+  const tabs = document.querySelectorAll('.js-price-tab');
+  const panels = document.querySelectorAll('.js-price-panel');
+
+  if (!tabs.length) return;
+
+  function activate(targetId) {
+    tabs.forEach(tab => {
+      const isTarget = tab.dataset.target === targetId;
+
+      tab.classList.toggle('is-active', isTarget);
+      tab.setAttribute('aria-selected', String(isTarget));
+      tab.tabIndex = isTarget ? 0 : -1;
+    });
+
+    panels.forEach(panel => {
+      const isTarget = panel.id === targetId;
+
+      panel.classList.toggle('is-active', isTarget);
+      panel.toggleAttribute('hidden', !isTarget);
+    });
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => activate(tab.dataset.target));
+  });
+
+  // Deep-link support: /prices.html#tab-setka opens straight on that tab
+  const hashTarget = document.getElementById(
+    window.location.hash.replace('#', '')
+  );
+
+  if (hashTarget && hashTarget.classList.contains('js-price-tab')) {
+    activate(hashTarget.dataset.target);
+  }
+}
+
 function initReviewsDots() {
   document.querySelectorAll('.reviews__dot').forEach(dot => {
     dot.addEventListener('click', function () {
@@ -280,5 +317,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initPhoneMask();
   initContactForm();
+  initPriceTabs();
   initReviewsDots();
 });

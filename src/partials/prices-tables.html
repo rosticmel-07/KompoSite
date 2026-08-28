@@ -1,0 +1,224 @@
+<section
+  class="prices-tables section"
+  id="prices-tables"
+  aria-labelledby="prices-tables-title"
+>
+  <div class="container">
+    <h2 class="sr-only" id="prices-tables-title">Прайс-лист</h2>
+
+    <!-- Tabs -->
+    <div class="prices-tabs" role="tablist" aria-label="Категорії прайсу">
+      <button
+        type="button"
+        class="prices-tabs__btn js-price-tab is-active"
+        id="tab-armatura"
+        role="tab"
+        aria-selected="true"
+        aria-controls="panel-armatura"
+        data-target="panel-armatura"
+      >
+        Композитна арматура
+      </button>
+      <button
+        type="button"
+        class="prices-tabs__btn js-price-tab"
+        id="tab-setka"
+        role="tab"
+        aria-selected="false"
+        aria-controls="panel-setka"
+        data-target="panel-setka"
+        tabindex="-1"
+      >
+        Композитна сітка
+      </button>
+    </div>
+
+    <!-- ARMATURA -->
+    <div
+      class="price-panel js-price-panel is-active"
+      id="panel-armatura"
+      role="tabpanel"
+      aria-labelledby="tab-armatura"
+      tabindex="0"
+    >
+      <div class="price-table-wrap">
+        <table class="price-table" aria-label="Прайс на композитну арматуру">
+          <thead>
+            <tr>
+              <th scope="col">Діаметр композитної арматури, мм</th>
+              <th scope="col">Аналог металевої арматури, мм</th>
+              <th scope="col">Ціна за м.п., оптова</th>
+              <th scope="col">Ціна за м.п., роздрібна</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3</td>
+              <td>5</td>
+              <td>4,4 грн</td>
+              <td>за запитом</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>6</td>
+              <td>4,9 грн</td>
+              <td>за запитом</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>8</td>
+              <td>8,2 грн</td>
+              <td>за запитом</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>10</td>
+              <td>10,7 грн</td>
+              <td>за запитом</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>12</td>
+              <td>14,5 грн</td>
+              <td>за запитом</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>14</td>
+              <td>21 грн</td>
+              <td>за запитом</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>16</td>
+              <td>32,5 грн</td>
+              <td>за запитом</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note">
+        Роздрібну ціну уточнюйте у менеджера — залежить від обсягу партії.
+      </p>
+      <a href="#contact" class="btn btn--primary">Замовити арматуру</a>
+    </div>
+    <!-- /ARMATURA -->
+
+    <!-- SETKA -->
+    <div
+      class="price-panel js-price-panel"
+      id="panel-setka"
+      role="tabpanel"
+      aria-labelledby="tab-setka"
+      tabindex="0"
+      hidden
+    >
+      <p class="price-panel__note-top">Рулони 50 м.п. (60 м²)</p>
+      <div class="price-table-wrap">
+        <table class="price-table" aria-label="Прайс на композитну сітку">
+          <thead>
+            <tr>
+              <th scope="col">Діаметр сітки, мм</th>
+              <th scope="col">Розмір клітинки, мм</th>
+              <th scope="col">Ціна за м², грн</th>
+              <th scope="col">Ціна за м.п., грн</th>
+              <th scope="col">Рулон 50 м.п., грн</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>50×50</td>
+              <td>54,00</td>
+              <td>64,80</td>
+              <td>3 240</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>100×100</td>
+              <td>38,21</td>
+              <td>45,85</td>
+              <td>2 292</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>200×200</td>
+              <td>29,70</td>
+              <td>35,64</td>
+              <td>1 782</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>50×50</td>
+              <td>91,80</td>
+              <td>110,16</td>
+              <td>5 508</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>100×100</td>
+              <td>54,00</td>
+              <td>64,80</td>
+              <td>3 240</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>200×200</td>
+              <td>40,50</td>
+              <td>48,60</td>
+              <td>2 430</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>50×50</td>
+              <td>145,80</td>
+              <td>174,96</td>
+              <td>8 748</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>100×100</td>
+              <td>94,50</td>
+              <td>113,40</td>
+              <td>5 670</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>200×200</td>
+              <td>55,35</td>
+              <td>66,42</td>
+              <td>3 321</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>50×50</td>
+              <td>163,35</td>
+              <td>196,02</td>
+              <td>9 801</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>100×100</td>
+              <td>130,95</td>
+              <td>157,14</td>
+              <td>7 857</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>200×200</td>
+              <td>108,00</td>
+              <td>129,60</td>
+              <td>6 480</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note">
+        Дрібніша клітинка (50×50) дає щільніше армування, більша (200×200) —
+        економічніший варіант на великі площі.
+      </p>
+      <a href="#contact" class="btn btn--primary">Замовити сітку</a>
+    </div>
+    <!-- /SETKA -->
+  </div>
+</section>
