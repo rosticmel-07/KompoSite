@@ -103,7 +103,7 @@ function initContactForm() {
 
   if (!form) return;
 
-  const MOCK_API_URL = 'https://6a1724cb1b90031f81b2170a.mockapi.io/orders';
+  const MOCK_API_URL = 'https://komposite-lead-proxy.rosticmel.workers.dev';
 
   function ctrl(fieldId) {
     return (
@@ -199,25 +199,28 @@ function initContactForm() {
       createdAt: new Date().toISOString(),
     };
 
-    try {
-      const response = await fetch(MOCK_API_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+   const response = await fetch(MOCK_API_URL, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(formData),
+});
 
-      if (!response.ok) {
-        throw new Error('Помилка при відправці форми');
-      }
+if (!response.ok) {
+  throw new Error('Помилка при відправці форми');
+}
 
-      await response.json();
+const result = await response.json();
+
+if (!result.ok) {
+  throw new Error('Помилка при відправці форми');
+}
 
 // Надсилаємо подію Lead у Meta Pixel після успішної заявки
-      if (typeof fbq === 'function') {
-        fbq('track', 'Lead');
-      }
+if (typeof fbq === 'function') {
+  fbq('track', 'Lead');
+}
       
       form.style.display = 'none';
       
