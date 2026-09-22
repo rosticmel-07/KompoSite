@@ -199,33 +199,34 @@ function initContactForm() {
       createdAt: new Date().toISOString(),
     };
 
-   const response = await fetch(MOCK_API_URL, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(formData),
-});
+    try {
+      const response = await fetch(MOCK_API_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-if (!response.ok) {
-  throw new Error('Помилка при відправці форми');
-}
+      if (!response.ok) {
+        throw new Error('Помилка при відправці форми');
+      }
 
-const result = await response.json();
+      const result = await response.json();
 
-if (!result.ok) {
-  throw new Error('Помилка при відправці форми');
-}
+      if (!result.ok) {
+        throw new Error('Помилка при відправці форми');
+      }
 
-// Надсилаємо подію Lead у Meta Pixel після успішної заявки
-if (typeof fbq === 'function') {
-  fbq('track', 'Lead');
-}
-      
+      // Надсилаємо подію Lead у Meta Pixel після успішної заявки
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+
       form.style.display = 'none';
-      
+
       success.classList.add('is-visible');
-      
+
       success.setAttribute('aria-hidden', 'false');
 
       setTimeout(() => {
