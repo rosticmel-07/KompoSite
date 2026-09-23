@@ -58,7 +58,13 @@ function initMobileNav() {
     document.body.style.overflow = '';
   };
 
-  hamburger.addEventListener('click', open);
+  hamburger.addEventListener('click', () => {
+  if (mobileNav.classList.contains('is-open')) {
+    close();
+  } else {
+    open();
+  }
+});
 
   closeBtn?.addEventListener('click', close);
 
